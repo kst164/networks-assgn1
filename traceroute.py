@@ -8,10 +8,10 @@ from scapy.layers.inet import traceroute
 """
 Usage: python3 traceroute.py <output_file>
 
-Requires scapy and dig to be installed
-
+Requires scapy to be installed
 On Linux, needs to be run as root
     scapy: sudo pip3 install scapy
+    run: sudo python3 traceroute.py <output_file>
 """
 
 if len(sys.argv) != 2:
@@ -69,17 +69,9 @@ def trace(endpoint):
         print(" done")
     return traces
 
-def get_ip(endpoint):
-    cmd = f"dig +short {endpoint}"
-    res = subprocess.run(cmd.split(), capture_output=True)
-    return res.stdout.decode().strip()
-
 final = []
 
 for i, endpoint in enumerate(endpoints):
-    # print(f"\n\nTraceroute to {endpoint}")
-    # ip = get_ip(endpoint)
-    # print(f"{endpoint} {ip}")
     print(f"{endpoint} ({i+1}/{len(endpoints)})")
     traces = trace(endpoint)
     final.append({
