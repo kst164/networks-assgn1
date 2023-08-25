@@ -1,0 +1,517 @@
+[
+    {
+        "id": "182.66.64.0/20",
+        "group": "9498",
+        "sname": "Bharti Airtel Limited"
+    },
+    {
+        "id": "184.104.0.0/15",
+        "group": "6939",
+        "sname": "Hurricane Electric LLC"
+    },
+    {
+        "id": "171.64.0.0/14",
+        "group": "32",
+        "sname": "Stanford University"
+    },
+    {
+        "id": "116.119.32.0/19",
+        "group": "9498",
+        "sname": "Bharti Airtel Limited"
+    },
+    {
+        "id": "151.101.64.0/22",
+        "group": "54113",
+        "sname": "Fastly, Inc."
+    },
+    {
+        "id": "116.119.64.0/18",
+        "group": "9498",
+        "sname": "Bharti Airtel Limited"
+    },
+    {
+        "id": "94.31.0.0/18",
+        "group": "6461",
+        "sname": "Zayo Bandwidth"
+    },
+    {
+        "id": "64.124.0.0/15",
+        "group": "6461",
+        "sname": "Zayo Bandwidth"
+    },
+    {
+        "id": "146.97.0.0/16",
+        "group": "786",
+        "sname": "Jisc Services Limited"
+    },
+    {
+        "id": "131.111.0.0/16",
+        "group": "786",
+        "sname": "Jisc Services Limited"
+    },
+    {
+        "id": "193.60.0.0/14",
+        "group": "786",
+        "sname": "Jisc Services Limited"
+    },
+    {
+        "id": "128.232.0.0/16",
+        "group": "786",
+        "sname": "Jisc Services Limited"
+    },
+    {
+        "id": "182.79.134.0/24",
+        "group": "9498",
+        "sname": "Bharti Airtel Limited"
+    },
+    {
+        "id": "182.79.161.0/24",
+        "group": "9498",
+        "sname": "Bharti Airtel Limited"
+    },
+    {
+        "id": "172.69.74.0/24",
+        "group": "13335",
+        "sname": "Cloudflare, Inc."
+    },
+    {
+        "id": "141.193.213.0/24",
+        "group": "209242",
+        "sname": "Cloudflare London, LLC"
+    },
+    {
+        "id": "172.71.196.0/24",
+        "group": "13335",
+        "sname": "Cloudflare, Inc."
+    },
+    {
+        "id": "182.79.164.0/24",
+        "group": "9498",
+        "sname": "Bharti Airtel Limited"
+    },
+    {
+        "id": "104.16.0.0/20",
+        "group": "13335",
+        "sname": "Cloudflare, Inc."
+    },
+    {
+        "id": "216.218.128.0/17",
+        "group": "6939",
+        "sname": "Hurricane Electric LLC"
+    },
+    {
+        "id": "101.4.0.0/14",
+        "group": "4538",
+        "sname": "China Education and Research Network Center"
+    },
+    {
+        "id": "202.112.0.0/16",
+        "group": "4538",
+        "sname": "China Education and Research Network Center"
+    },
+    {
+        "id": "118.229.0.0/21",
+        "group": "4538",
+        "sname": "China Education and Research Network Center"
+    },
+    {
+        "id": "118.229.8.0/21",
+        "group": "4538",
+        "sname": "China Education and Research Network Center"
+    },
+    {
+        "id": "166.111.4.0/24",
+        "group": "4538",
+        "sname": "China Education and Research Network Center"
+    },
+    {
+        "id": "80.81.192.0/21",
+        "group": "4775",
+        "sname": "Globe Telecom (GMCR,INC)"
+    },
+    {
+        "id": "130.59.0.0/16",
+        "group": "559",
+        "sname": "SWITCH"
+    },
+    {
+        "id": "192.33.92.0/22",
+        "group": "559",
+        "sname": "SWITCH"
+    },
+    {
+        "id": "129.132.0.0/16",
+        "group": "559",
+        "sname": "SWITCH"
+    },
+    {
+        "id": "217.170.0.0/24",
+        "group": "24785",
+        "sname": "Broadband Hosting B.V."
+    },
+    {
+        "id": "82.150.158.0/24",
+        "group": "20562",
+        "sname": "Broadband Hosting B.V."
+    },
+    {
+        "id": "145.144.0.0/12",
+        "group": "1103",
+        "sname": "SURF B.V."
+    },
+    {
+        "id": "145.18.0.0/16",
+        "group": "1124",
+        "sname": "Universiteit van Amsterdam"
+    },
+    {
+        "id": "182.79.245.0/24",
+        "group": "9498",
+        "sname": "Bharti Airtel Limited"
+    },
+    {
+        "id": "23.185.0.0/24",
+        "group": "54113",
+        "sname": "Fastly, Inc."
+    },
+    {
+        "id": "80.231.0.0/16",
+        "group": "6453",
+        "sname": "TATA COMMUNICATIONS (AMERICA) INC"
+    },
+    {
+        "id": "64.86.0.0/16",
+        "group": "6453",
+        "sname": "TATA COMMUNICATIONS (AMERICA) INC"
+    },
+    {
+        "id": "216.6.0.0/17",
+        "group": "6453",
+        "sname": "TATA COMMUNICATIONS (AMERICA) INC"
+    },
+    {
+        "id": "206.82.128.0/20",
+        "group": "6453",
+        "sname": "TATA COMMUNICATIONS (AMERICA) INC"
+    },
+    {
+        "id": "192.77.63.0/24",
+        "group": "376",
+        "sname": "Reseau d'Informations Scientifiques du Quebec (RISQ Inc.)"
+    },
+    {
+        "id": "206.167.128.0/17",
+        "group": "376",
+        "sname": "Reseau d'Informations Scientifiques du Quebec (RISQ Inc.)"
+    },
+    {
+        "id": "132.216.0.0/16",
+        "group": "15318",
+        "sname": "McGill University"
+    },
+    {
+        "id": "195.219.0.0/16",
+        "group": "6453",
+        "sname": "TATA COMMUNICATIONS (AMERICA) INC"
+    },
+    {
+        "id": "115.247.68.0/22",
+        "group": "55836",
+        "sname": "Reliance Jio Infocomm Limited"
+    },
+    {
+        "id": "158.144.8.0/23",
+        "group": "132524",
+        "sname": "Tata Institute of Fundamental Research"
+    },
+    {
+        "id": "158.144.1.0/24",
+        "group": "132524",
+        "sname": "Tata Institute of Fundamental Research"
+    },
+    {
+        "id": "115.242.168.0/23",
+        "group": "55836",
+        "sname": "Reliance Jio Infocomm Limited"
+    },
+    {
+        "id": "103.21.124.0/24",
+        "group": "132423",
+        "sname": "Indian Institute of Technology Bombay"
+    },
+    {
+        "id": "104.40.0.0/13",
+        "group": "8075",
+        "sname": "Microsoft Corporation"
+    },
+    {
+        "id": "20.192.0.0/10",
+        "group": "8075",
+        "sname": "Microsoft Corporation"
+    },
+    {
+        "id": "182.79.239.0/24",
+        "group": "9498",
+        "sname": "Bharti Airtel Limited"
+    },
+    {
+        "id": "136.232.128.0/19",
+        "group": "55836",
+        "sname": "Reliance Jio Infocomm Limited"
+    },
+    {
+        "id": "103.27.9.0/24",
+        "group": "132780",
+        "sname": "Indian Institute of Technology Delhi"
+    },
+    {
+        "id": "203.110.240.0/21",
+        "group": "55847",
+        "sname": "National Knowledge Network"
+    },
+    {
+        "id": "121.240.0.0/16",
+        "group": "4755",
+        "sname": "Tata Communications Limited"
+    },
+    {
+        "id": "14.141.20.0/24",
+        "group": "4755",
+        "sname": "Tata Communications Limited"
+    },
+    {
+        "id": "103.158.42.0/24",
+        "group": "141340",
+        "sname": "IIT Madras"
+    },
+    {
+        "id": "139.167.44.0/22",
+        "group": "55836",
+        "sname": "Reliance Jio Infocomm Limited"
+    },
+    {
+        "id": "202.3.77.0/24",
+        "group": "55479",
+        "sname": "IIT Kanpur"
+    },
+    {
+        "id": "115.247.100.0/22",
+        "group": "55836",
+        "sname": "Reliance Jio Infocomm Limited"
+    },
+    {
+        "id": "103.232.241.0/24",
+        "group": "59193",
+        "sname": "IIT Hyderabad"
+    },
+    {
+        "id": "80.249.208.0/21",
+        "group": "4775",
+        "sname": "Globe Telecom (GMCR,INC)"
+    },
+    {
+        "id": "155.232.0.0/16",
+        "group": "2018",
+        "sname": "TENET (The UNINET Project)"
+    },
+    {
+        "id": "155.232.0.0/17",
+        "group": "2018",
+        "sname": "TENET (The UNINET Project)"
+    },
+    {
+        "id": "154.114.0.0/17",
+        "group": "2018",
+        "sname": "TENET (The UNINET Project)"
+    },
+    {
+        "id": "137.158.0.0/16",
+        "group": "36982",
+        "sname": "University of Cape Town"
+    },
+    {
+        "id": "116.51.16.0/20",
+        "group": "2914",
+        "sname": "NTT America, Inc."
+    },
+    {
+        "id": "129.250.0.0/16",
+        "group": "2914",
+        "sname": "NTT America, Inc."
+    },
+    {
+        "id": "200.143.192.0/18",
+        "group": "1916",
+        "sname": "Rede Nacional de Ensino e Pesquisa"
+    },
+    {
+        "id": "143.107.249.0/24",
+        "group": "28571",
+        "sname": "UNIVERSIDADE DE SAO PAULO"
+    },
+    {
+        "id": "200.144.248.0/24",
+        "group": "28571",
+        "sname": "UNIVERSIDADE DE SAO PAULO"
+    },
+    {
+        "id": "193.54.0.0/15",
+        "group": "2200",
+        "sname": "Renater"
+    },
+    {
+        "id": "193.48.0.0/14",
+        "group": "2200",
+        "sname": "Renater"
+    },
+    {
+        "id": "195.221.0.0/16",
+        "group": "2200",
+        "sname": "Renater"
+    },
+    {
+        "id": "195.220.0.0/16",
+        "group": "2200",
+        "sname": "Renater"
+    },
+    {
+        "id": "4.0.0.0/9",
+        "group": "3356",
+        "sname": "Level 3 Parent, LLC"
+    },
+    {
+        "id": "8.244.0.0/15",
+        "group": "3356",
+        "sname": "Level 3 Parent, LLC"
+    },
+    {
+        "id": "163.139.0.0/16",
+        "group": "2519",
+        "sname": "ARTERIA Networks Corporation"
+    },
+    {
+        "id": "222.230.0.0/16",
+        "group": "2519",
+        "sname": "ARTERIA Networks Corporation"
+    },
+    {
+        "id": "158.205.121.0/24",
+        "group": "4694",
+        "sname": "IDC Frontier Inc."
+    },
+    {
+        "id": "210.152.240.0/21",
+        "group": "4694",
+        "sname": "IDC Frontier Inc."
+    },
+    {
+        "id": "113.29.0.0/20",
+        "group": "3549",
+        "sname": "Level 3 Parent, LLC"
+    },
+    {
+        "id": "151.101.152.0/22",
+        "group": "54113",
+        "sname": "Fastly, Inc."
+    },
+    {
+        "id": "151.101.128.0/22",
+        "group": "54113",
+        "sname": "Fastly, Inc."
+    },
+    {
+        "id": "218.248.0.0/20",
+        "group": "9829",
+        "sname": "Bharat Sanchar Nigam Ltd"
+    },
+    {
+        "id": "180.149.48.0/24",
+        "group": "55824",
+        "sname": "National Knowledge Network"
+    },
+    {
+        "id": "163.253.0.0/22",
+        "group": "11537",
+        "sname": "Internet2"
+    },
+    {
+        "id": "137.164.26.0/23",
+        "group": "2153",
+        "sname": "California State University, Office of the Chancellor"
+    },
+    {
+        "id": "137.164.25.0/24",
+        "group": "2153",
+        "sname": "California State University, Office of the Chancellor"
+    },
+    {
+        "id": "151.101.192.0/22",
+        "group": "54113",
+        "sname": "Fastly, Inc."
+    },
+    {
+        "id": "62.40.96.0/19",
+        "group": "20965",
+        "sname": "GEANT Vereniging"
+    },
+    {
+        "id": "49.44.128.0/17",
+        "group": "55836",
+        "sname": "Reliance Jio Infocomm Limited"
+    },
+    {
+        "id": "172.68.39.0/24",
+        "group": "13335",
+        "sname": "Cloudflare, Inc."
+    },
+    {
+        "id": "210.25.189.0/24",
+        "group": "23911",
+        "sname": "China Next Generation Internet Beijing IX"
+    },
+    {
+        "id": "210.25.187.0/24",
+        "group": "23911",
+        "sname": "China Next Generation Internet Beijing IX"
+    },
+    {
+        "id": "205.189.32.0/24",
+        "group": "6509",
+        "sname": "CANARIE Inc"
+    },
+    {
+        "id": "117.236.224.0/20",
+        "group": "9829",
+        "sname": "Bharat Sanchar Nigam Ltd"
+    },
+    {
+        "id": "210.212.69.0/24",
+        "group": "9829",
+        "sname": "Bharat Sanchar Nigam Ltd"
+    },
+    {
+        "id": "64.57.16.0/20",
+        "group": "11537",
+        "sname": "Internet2"
+    },
+    {
+        "id": "151.101.0.0/22",
+        "group": "54113",
+        "sname": "Fastly, Inc."
+    },
+    {
+        "id": "162.158.226.0/23",
+        "group": "13335",
+        "sname": "Cloudflare, Inc."
+    },
+    {
+        "id": "172.70.216.0/24",
+        "group": "13335",
+        "sname": "Cloudflare, Inc."
+    },
+    {
+        "id": "151.101.156.0/22",
+        "group": "54113",
+        "sname": "Fastly, Inc."
+    }
+]

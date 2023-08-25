@@ -1,0 +1,114 @@
+[
+    {
+        "node": "stanford.edu",
+        "cidr": "171.64.0.0/14"
+    },
+    {
+        "node": "www.ox.ac.uk",
+        "cidr": "151.101.64.0/22"
+    },
+    {
+        "node": "www.cam.ac.uk",
+        "cidr": "128.232.0.0/16"
+    },
+    {
+        "node": "www.berkeley.edu",
+        "cidr": "141.193.213.0/24"
+    },
+    {
+        "node": "www.ntu.edu.sg",
+        "cidr": "104.16.0.0/20"
+    },
+    {
+        "node": "www.tsinghua.edu.cn",
+        "cidr": "166.111.4.0/24"
+    },
+    {
+        "node": "www.ethz.ch",
+        "cidr": "129.132.0.0/16"
+    },
+    {
+        "node": "www.uva.nl",
+        "cidr": "145.18.0.0/16"
+    },
+    {
+        "node": "www.utoronto.ca",
+        "cidr": "23.185.0.0/24"
+    },
+    {
+        "node": "www.mcgill.ca",
+        "cidr": "132.216.0.0/16"
+    },
+    {
+        "node": "www.tifr.res.in",
+        "cidr": "158.144.1.0/24"
+    },
+    {
+        "node": "www.iitb.ac.in",
+        "cidr": "103.21.124.0/24"
+    },
+    {
+        "node": "www.iisc.ac.in",
+        "cidr": "20.192.0.0/10"
+    },
+    {
+        "node": "www.iitd.ac.in",
+        "cidr": "103.27.9.0/24"
+    },
+    {
+        "node": "www.iitkgp.ac.in",
+        "cidr": "203.110.240.0/21"
+    },
+    {
+        "node": "www.iitm.ac.in",
+        "cidr": "103.158.42.0/24"
+    },
+    {
+        "node": "www.iitk.ac.in",
+        "cidr": "202.3.77.0/24"
+    },
+    {
+        "node": "www.iith.ac.in",
+        "cidr": "103.232.241.0/24"
+    },
+    {
+        "node": "www.uct.ac.za",
+        "cidr": "137.158.0.0/16"
+    },
+    {
+        "node": "www5.usp.br",
+        "cidr": "200.144.248.0/24"
+    },
+    {
+        "node": "www.u-paris.fr",
+        "cidr": "195.220.0.0/16"
+    },
+    {
+        "node": "www.u-tokyo.ac.jp",
+        "cidr": "210.152.240.0/21"
+    },
+    {
+        "node": "www.kyoto-u.ac.jp",
+        "cidr": "151.101.152.0/22"
+    },
+    {
+        "node": "www.ox.ac.uk",
+        "cidr": "151.101.128.0/22"
+    },
+    {
+        "node": "www.iith.ac.in",
+        "cidr": "218.248.0.0/20"
+    },
+    {
+        "node": "www.ox.ac.uk",
+        "cidr": "151.101.192.0/22"
+    },
+    {
+        "node": "www.kyoto-u.ac.jp",
+        "cidr": "151.101.64.0/22"
+    },
+    {
+        "node": "www.ox.ac.uk",
+        "cidr": "151.101.0.0/22"
+    }
+]
