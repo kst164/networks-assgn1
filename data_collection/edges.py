@@ -60,6 +60,8 @@ for source in all_jsons:
                     "source": de_search(source['origin']),
                     "sink": de_search(dest['endpoint'])
                 }
+                if q['value'] > 50:
+                    print(q)
                 if q not in edges:
                     edges += [q]
         x += 1
