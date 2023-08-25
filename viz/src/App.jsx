@@ -9,14 +9,13 @@ import Select from '@mui/material/Select';
 
 import { as_info } from '../as_info';
 import data from '../data.json';
-const Sources = ["59193", "141340", "132780","132423","60410", "133982", "24560", "55847"]
+const Sources = ["59193", "141340", "132780","132423","60410", "24560", "55847"]
 const Names = {
   "59193": "IIT Hyderabad",
   "141340": "IIT Madras",
   "132780": "Indian Institute of Technology Delhi",
   "132423": "Indian Institute of Technology Bombay",
   "60410": "Hewlett Packard France S.A.S.",
-  "133982": "Excitel Broadband Pvt Ltd (Local Bangalore)",
   "24560": "Bharti Airtel Limited (Local Hyderabad)",
   "55847": "National Knowledge Network (IIT Guwahati)",
 }
@@ -48,18 +47,9 @@ const colors = {
 }
 
 function App() {
-  // const [data, setData] = useState(null)
-  // const [asn, setAsn] = useState(null)
+
   const graphRef = useRef(null);
 
-  // useEffect(() => {
-  //   fetch('data.json').then(res => res.json()).then(data => {
-  //     setData(data);
-  //   })
-  //   fetch('as_info.json').then(res => res.json()).then(data => {
-  //     setAsn(data);
-  //   })
-  // }, [])
 
   useEffect(() => {
     if (data) {
@@ -75,10 +65,7 @@ function App() {
   const speedFactor = 0.001;
   const [origin, setOrigin] = useState("")
   const [sink, setSink] = useState("")
-  
-  // useEffect(() => {
-  //   console.log(origin, sink);
-  // }, [origin, sink])
+
   
   const getString = function(cidr_list){
     return cidr_list.join(", ")
@@ -130,8 +117,6 @@ function App() {
             linkTarget='to'
             nodeLabel={d =>`${d.sname} (ASN: ${d.id})<br/>${getString(d.cidr_list)}`}
             nodeAutoColorBy="country"
-            nodeRelSize={4}
-            // linkLabel={d => `${d.value * speedFactor} ms`}
             ref={graphRef}
             backgroundColor='#040D12'
             linkColor={d => {
@@ -224,7 +209,6 @@ function App() {
             //     }
             //     else return 0
             //   }} 
-            // linkCurvature={Math.random()*0.6-0.3}
           />
         )}
       </Box>
