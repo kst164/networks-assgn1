@@ -93,9 +93,18 @@ the AS.
 
 ## Takeaways
 
-- The Internet is a vast and complex realm, with myriad interconnected networks and subnetworks and a grand superstructure. Through the controlled application of the `traceroute` tool, we have been able to map a portion of the Internet to a graph, through which we study its topology.
-- Numerically, looking at the edge-to-node ratio, we can see that the graph is dense and well connected. Obviously, not all the edges of the graph correspond to different physical links, but the number is a viable yardstick for how well-connected different parts of the network are.
-- The first tangible takeaway is the knowledge of Autonomous Systems and their layout throughout the internet. The various APIs and online databases relating AS numbers to IPs and organisations yields valuable knowledge about the contents of the Internet.
-- It is immediately obvious from the graph that a large amount of traffic goes through several key AS'es, and that these AS'es are ISPs or Cloud platforms. Further investigation shows the likes of Bharti Airtel, Reliance Jio Infocomm Ltd., along with Fastly.net and Cloudflare, Inc. which are Cloud platforms. 
-- A more thorough review provides knowledge of ISP-client relations across the globe, including but not limited to the scope of the National Knowledge Network, exactly which ISPs service which organisations, and the fact that our college IITH is directly linked to several other IIT's directly without going through either NKN or Jio.
-- The graph lends itself well to a deep investigation, which when conducted imparts several more insights. NKN itself appears to own two ASNs, viz. 55824 and 55847. However, when we check the ASN of IIT Guwahati, it shows 55847, indicating that this AS hosts some IIT websites. During our data colection, we found that IIT Kharagpur is also hosted in the same AS. 
+- The Internet is a complex system, with interconnected networks and subnetworks creating a grand superstructure.
+  Through the `traceroute` tool, we have mapped a portion of the Internet to a graph, through which we study its topology.
+- Looking at the edge-to-node ratio, we can see that the graph is dense and well connected. While not all the edges
+  correspond to physical links, it is a good estimate of how well connected the Internet is.
+- The first tangible takeaway is the knowledge of Autonomous Systems and their layout. The various APIs and online
+  databases relating AS numbers to IPs and organisations yields valuable knowledge about the contents of the Internet.
+- We see from the graph that a large amount of traffic goes through several key ASes, which are ISPs or Cloud platforms.
+  Further investigation shows ISPs such as Bharti Airtel and  Reliance Jio Infocomm Ltd., along with Cloud Platforms
+  like Fastly.net and Cloudflare, Inc.
+- A more thorough review provides knowledge of ISP-client relations across the globe, such as the National Knowledge
+  Network, which ISPs service which organisations, and the fact that our college IITH is directly linked to several
+  other IIT's directly without going through any ISP.
+- We see from the graph that NKN itself appears to own two ASNs, 55824 and 55847. However, when we check the ASN of IIT
+  Guwahati, it shows 55847, indicating that this AS hosts some IIT websites. We also found that IIT Kharagpur is also
+  hosted in the same AS. 
