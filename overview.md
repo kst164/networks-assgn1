@@ -1,56 +1,98 @@
-# Depiction of Internet Topology
+---
+title: Depiction of Internet Topology
+date: \today
+geometry: margin=2cm
+---
 
 ## Authors:
-- ### Abhay Shankar K: cs21btech11001
-- ### Kartheek Sriram Tammana: cs21btech11028
-- ### Kushagra Gupta: cs21btech11033
+
+- Abhay Shankar K: cs21btech11001
+- Kartheek Sriram Tammana: cs21btech11028
+- Kushagra Gupta: cs21btech11033
 
 
 ## Files
+
 This section contain the list of files included, as well as their purposes and their origin.
-- `data_collection`:
-  - `raw_traces`:
-  - `clean_traces`:
-  - `01-traceroute.py`:
-  - `02-collectASNs.py`:
-  - `03-clean-raw-traces.py`:
-  - `04-build-graph.py`:
-  - `as_info.json`:
-  - `graph.json`:
-  - `ip_to_asn.json`:
+
+- `data_collection`: These scripts collect the data and generate the graph
+  - `raw_traces/*.json`: Raw traceroute data (from `01-traceroute.py`)
+  - `01-traceroute.py`: Run traceroute to all destinations (uses the `scapy` library)
+  - `02-collect-ASNs.py`: Collect AS info for all IPs (uses a public API). Generates:
+    - `ip_to_asn.json`: IP to ASN mapping (from `02-collect-ASNs.py`)
+    - `as_info.json`: AS info (from `02-collect-ASNs.py`)
+  - `03-clean-raw-traces.py`: Clean the traceroute data (collapse duplicates, add AS info, etc.)
+    - Generates `clean_traces/*.json`: Cleaned traceroute data (from `03-clean-raw-traces.py`)
+  - `04-build-graph.py`: Build the graph from the cleaned traceroute data.
+    - Generates `graph.json`: Final graph (from `04-build-graph.py`)
 - `viz`:
   - `src`:
   - `as_info.json`:
 
 ## Execution
-This section contains the entire process to construct the final graph from scratch.
 
-**Bunch of .py things**
+### Building the graph
+
+Data collection done by the `01-traceroute.py` script. It uses the `scapy` library to run traceroute to all
+destinations. It outputs a JSON file, and the collected JSON files from multiple different sources is available in the
+`raw_traces` directory.
+
+To collect ASN info and build the graph, (using our given data):
+
+```bash
+cd data_collection
+python3 02-collect-ASNs.py
+python3 03-clean-raw-traces.py
+python3 04-build-graph.py
+```
+
+### Visualizing the graph
+
+To run the visualization,
+
+```bash
+cd viz
+npm install
+npm run dev
+```
+
+then open [http://localhost:5173](http://localhost:5173) in the browser. Alternately, we have hosted it online at
+[https://kst164.github.io/networks-assgn1/](https://kst164.github.io/networks-assgn1/).
 
 ## Presentation
 
-Our final presentation is an interactive 3d graph, with each node representing a collection of routers and servers with the same AS number, and each edge representing a link between two routers with different AS numbers. 
+Our final presentation is an interactive 3d graph, with nodes representing routers with the same AS number, and edges
+representing a link between two ASes.
 
-We chose colleges across the globe as our destination - some of them have hosted their websites locally and independently, others have used a third-party service or CDN. This variation enables us to get a more complete picture of the Internet.
+We chose colleges across the globe as our destinations - some have hosted their websites locally, while others have
+used a third-party service or CDN. This gives us a clearer picture of the Internet.
 
 ### Node properties:
-- Each node represents one or more switches and routers. They have beenn condensed into a single node to prevent overpopulation, as well as achieve a more abstract representation - one node is one Autonomous System. It's that simple!
-- Each node in the graph is labelled with its AS number, and upon hovering over a node a popup displays the same, along with the name of the corresponding institution or ISP.
-- The nodes are also grouped by country, i.e. the colour of a node is determined by the country of the corresponding ASN.
-- Nodes are also scaled in size based on their degree (i.e. number of incident edges). This facilitates a more intuitive understanding of network architecture.
+
+- Each node represents one Autonomous System, and represent a collection of routers and switches.
+- Upon hovering over a node, a popup displays the AS number, and the organisation that owns it.
+- The nodes are colour coded based on the country of the organisation that owns the AS.
+- Nodes are scaled in size based on their degree (i.e. number of incident edges). This gives a rough idea of the size of
+the AS.
 
 ### Edge properties:
-- If two nodes are connected by an edge, then one of the routers or switches in the AS of the first node is directly connected to another in the AS of the second. These represent links between different autonomous systems. 
-- We have chosen not to display the links that shunt packets around within an AS, as these generally represent the connections within a data centre.
-- Each edge contains packets - animated spheres travelling along the edge direction. The rate of emission and the speed of these packets along the edge is representative of the time taken by a packet to complete it's journey within the AS of the recipient node, and not just the speed of the link joining the two Autonomous Systems.
-- The graph is not a simple graph, and more than one edge may exist between two nodes. This occurs when `traceroute`s to multiple targets or from multiple sources. This is not directly visible, and appears as packets of different colours, travelling at different speeds. 
+
+- An edge between two nodes represents a link between the two Autonomous Systems.
+- Links between two routers within the same AS are not represented in the graph.
+- Each edge contains packets - moving spheres travelling along the edge direction. The speed of a packet represents the
+  latency of the link.
+- The graph is a multigraph, i.e., multiple edges may exist between two nodes. This occurs when multiple traceroutes,
+  from different sources/destinations, pass through the same link. This is not directly visible, and appears as packets
+  of different colours, travelling at different speeds. 
 
 ### Global graph properties
+
 - The whole graph is interactive, and a user can drag a node around and hover over a node to get additional data. 
 - Furthermore, the user may select a source or destination to highlight the nodes and edges constituting the path between them.
 - The graph contains **48** nodes and **942** edges - some of these edges are between the same pair of nodes along different routes.
 
 ## Takeaways
+
 - The Internet is a vast and complex realm, with myriad interconnected networks and subnetworks and a grand superstructure. Through the controlled application of the `traceroute` tool, we have been able to map a portion of the Internet to a graph, through which we study its topology.
 - Numerically, looking at the edge-to-node ratio, we can see that the graph is dense and well connected. Obviously, not all the edges of the graph correspond to different physical links, but the number is a viable yardstick for how well-connected different parts of the network are.
 - The first tangible takeaway is the knowledge of Autonomous Systems and their layout throughout the internet. The various APIs and online databases relating AS numbers to IPs and organisations yields valuable knowledge about the contents of the Internet.
