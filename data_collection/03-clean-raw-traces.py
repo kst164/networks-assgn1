@@ -2,8 +2,6 @@ import os
 import json
 import ipaddress
 
-import requests
-
 input_directory = "raw_traces"
 output_directory = "clean_traces"
 

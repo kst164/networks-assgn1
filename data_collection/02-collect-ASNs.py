@@ -69,12 +69,8 @@ for i, ip in enumerate(ip_set):
         continue
     asn_dict[ip] = get_asn(ip)
 
-as_info.sort()
 with open("as_info.json", "w") as f:
     json.dump(asn_info, f, indent=4)
 
 with open("ip_to_asn.json", "w") as f:
     json.dump(asn_dict, f, indent=4)
-
-print(len(ip_set))
-print(len(asn_dict))
