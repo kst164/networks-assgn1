@@ -74,7 +74,7 @@ def get_edges():
 
 graph = {
     "nodes": get_nodes(),
-    "edges": get_edges(),
+    "links": get_edges(),
 }
 
 with open('graph.json', mode='w') as out_file:
