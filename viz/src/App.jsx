@@ -8,6 +8,8 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
+import { as_info } from '../as_info';
+import { data } from '../data';
 const Sources = ["59193", "141340", "132780","132423","1"]
 const Sinks = ["32", "54113","786","209242","13335","4538","559","1124","54113","15318","132524","132423","8075","132780","55847","141340","55479","59193","36982","28571","2200","4694","54113","9829"]
 const colors = {
@@ -37,14 +39,18 @@ const colors = {
 }
 
 function App() {
-  const [data, setData] = useState(null)
+  // const [data, setData] = useState(null)
+  // const [asn, setAsn] = useState(null)
   const graphRef = useRef(null);
 
-  useEffect(() => {
-    fetch('data.json').then(res => res.json()).then(data => {
-      setData(data);
-    })
-  }, [])
+  // useEffect(() => {
+  //   fetch('data.json').then(res => res.json()).then(data => {
+  //     setData(data);
+  //   })
+  //   fetch('as_info.json').then(res => res.json()).then(data => {
+  //     setAsn(data);
+  //   })
+  // }, [])
 
   useEffect(() => {
     if (data) {
@@ -58,12 +64,12 @@ function App() {
   }, [data])
 
   const speedFactor = 0.001;
-  const [source, setSource] = useState("")
+  const [origin, setOrigin] = useState("")
   const [sink, setSink] = useState("")
   
   useEffect(() => {
-    console.log(source, sink);
-  }, [source, sink])
+    console.log(origin, sink);
+  }, [origin, sink])
   
   
 
@@ -76,13 +82,15 @@ function App() {
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={source}
+          value={origin}
           label="Source"
-          onChange={e => setSource(e.target.value)}
+          onChange={e => setOrigin(e.target.value)}
         >
-          {Sources.map((o, i) => (
-            <MenuItem key={i} value={o}>{o}</MenuItem>
-          ))}
+          <MenuItem value={""}>None</MenuItem>
+          {as_info && Sources.map((o, i) => {
+            return (<MenuItem key={i} value={o}>{as_info[o]?.shortname}</MenuItem>)
+          }
+          )}
         </Select>
       </FormControl>
       <FormControl sx={{width: "15rem"}}>
@@ -94,8 +102,9 @@ function App() {
           label="Sink"
           onChange={e => setSink(e.target.value)}
         >
+          <MenuItem value={""}>None</MenuItem>
           {Sinks.map((o, i) => (
-            <MenuItem key={i} value={o}>{o}</MenuItem>
+            <MenuItem key={i} value={o}>{as_info[o]?.shortname}</MenuItem>
           ))}
         </Select>
       </FormControl>
@@ -114,8 +123,16 @@ function App() {
             ref={graphRef}
             backgroundColor='#040D12'
             linkColor={d => {
-              if (source!="" || sink!=""){
-                if (d.origin == source || d.sink == sink) {
+              if (origin!="" && sink!=""){
+                  if (d.origin == origin && d.sink == sink) {
+                    return '#07f5e9'
+                  }
+                  else{
+                    return '#222424'
+                  }
+              }
+              else if (origin!="" || sink!=""){
+                if (d.origin == origin || d.sink == sink) {
                   return '#07f5e9'
                 }
                 else{
@@ -130,8 +147,16 @@ function App() {
               node.fz = node.z
             }}
             linkWidth={d => {
-              if (source!="" || sink!=""){
-                if (d.origin == source || d.sink == sink) {
+              if (origin!="" && sink!=""){
+                  if (d.origin == origin && d.sink == sink) {
+                    return 3
+                  }
+                  else{
+                    return 1
+                  }
+              }
+              if (origin!="" || sink!=""){
+                if (d.origin == origin || d.sink == sink) {
                   return 3
                 }
                 else{
@@ -142,21 +167,23 @@ function App() {
             }}
             linkDirectionalParticles="value"
             linkDirectionalParticleSpeed={d => d.value*(0.9 + Math.random()*0.2) * speedFactor}
-            linkDirectionalParticleColor={d => colors[d.color]}
-            // linkWidth={d => {
-            //   if (d.source === source && d.sink === sink) {
-            //     console.log("accepted",d);
-            //     return 5
-            //   }
-            //   else{
-            //     // console.log("rejected", d);
-            //     return 1
-            //   }
-            // }}
-            // backgroundColor='white'
-            // linkColor={'#FFFFFF'}
-            // linkDirectionalArrowLength={d => d.value * 2}
-            // linkCurvature={0.1}
+            linkDirectionalParticleColor={d => {
+              if (origin!="" && sink!=""){
+                  if (d.origin == origin && d.sink == sink) {
+                    return colors[d.color]
+                  }
+                  return '#222424'
+              }
+              if (origin!="" || sink!=""){
+                if (d.origin == origin || d.sink == sink) {
+                  return colors[d.color]
+                }
+                return '#222424'
+              }
+              else return colors[d.color]
+            }}
+            linkDirectionalParticleWidth={d => 2}
+            // linkCurvature={Math.random()*0.6-0.3}
           />
         )}
       </Box>
