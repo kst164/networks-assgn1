@@ -9,6 +9,8 @@ import requests
 directory = "raw_traces"
 
 ip_set = set()
+ip_set.add("16.10.16.9") # blore
+ip_set.add("192.140.152.217") # blore2
 
 # iterate all files in a directory
 for filename in os.listdir(directory):
@@ -67,6 +69,7 @@ for i, ip in enumerate(ip_set):
         continue
     asn_dict[ip] = get_asn(ip)
 
+as_info.sort()
 with open("as_info.json", "w") as f:
     json.dump(asn_info, f, indent=4)
 

@@ -6,6 +6,7 @@ directory = "clean_traces"
 
 source_asns = {
     "blore": "60140",
+    "blore2": "133982",
     "hyd": "24560",
     "iitb": "132423",
     "iitd": "132780",
@@ -20,17 +21,11 @@ def get_nodes():
     nodes = []
     for asn, info in as_info.items():
         nodes.append({
-            "id": asn, 
+            "id": asn,
             "sname": info['shortname'],
             "country": info['country'],
             "cidr_list": info['cidr_list']
         })
-    nodes.append({
-        "id": '1',
-        "sname": 'blore',
-        "country": 'IN',
-        "cidr_list": ['pfft']
-    })
     return nodes
 
 def time_transform(t):
@@ -62,7 +57,7 @@ def get_edges():
                         "value": time_transform(trace[0]["rtt"]),
                         "color": endp_idx,
                         "origin": source_asns[origin],
-                        "dest": dest_asn,
+                        "sink": dest_asn,
                     })
 
                 for i in range(len(trace) - 1):
@@ -73,7 +68,7 @@ def get_edges():
                         "value": time_transform(time),
                         "color": endp_idx,
                         "origin": source_asns[origin],
-                        "dest": dest_asn,
+                        "sink": dest_asn,
                     })
     return edges
 
