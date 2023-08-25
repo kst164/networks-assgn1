@@ -75,6 +75,7 @@ def get_edges():
                         "origin": source_asns[origin],
                         "dest": dest_asn,
                     })
+    return edges
 
 graph = {
     "nodes": get_nodes(),

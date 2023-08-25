@@ -8,7 +8,7 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 import { as_info } from '../as_info';
-import { data } from '../data';
+import data from '../data.json';
 const Sources = ["59193", "141340", "132780","132423","1"]
 const Sinks = ["32", "54113","786","209242","13335","4538","559","1124","54113","15318","132524","132423","8075","132780","55847","141340","55479","59193","36982","28571","2200","4694","54113","9829"]
 const colors = {
@@ -138,7 +138,7 @@ function App() {
                   return '#222424'
                 }
               }
-              else return colors[(d.color+1)%22]
+              else return '#222424'
             }}
             onNodeDragEnd={node => {
               node.fx = node.x
@@ -165,7 +165,7 @@ function App() {
               else return 1
             }}
             linkDirectionalParticles="value"
-            linkDirectionalParticleSpeed={d => d.value*(0.9 + Math.random()*0.2) * speedFactor}
+            linkDirectionalParticleSpeed={d => d.value * speedFactor}
             linkDirectionalParticleColor={d => {
               if (origin!="" && sink!=""){
                   if (d.origin == origin && d.sink == sink) {
@@ -181,7 +181,7 @@ function App() {
               }
               else return colors[d.color]
             }}
-            linkDirectionalParticleWidth={d => 2}
+            linkDirectionalParticleWidth={2}
             // linkCurvature={Math.random()*0.6-0.3}
           />
         )}

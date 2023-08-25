@@ -434,7 +434,7 @@
             ]
         },
         {
-            "id": "1",
+            "id": "60140",
             "sname": "blore",
             "country": "IN",
             "cidr_list": [
@@ -442,7 +442,7 @@
             ]
         }
     ],
-    "edges": [
+    "links": [
         {
             "from": "55847",
             "to": "32",
