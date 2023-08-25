@@ -58,13 +58,14 @@ def clean_trace(trace):
             continue
         asn, _, cidr = as_info
 
-        if len(cleaned_trace) > 0 and cleaned_trace[-1]["cidr"] == cidr:
-            cleaned_trace[-1]["rtt"] = rtt
+        if len(cleaned_trace) > 0 and cleaned_trace[-1]["asn"] == asn:
+            cleaned_trace[-1]["rtt"] += rtt
+            cleaned_trace[-1]["rtt"] /= 2
+            continue
 
         cleaned_trace.append({
             "rtt": rtt,
             "asn": asn,
-            "cidr": str(cidr),
         })
         if ip == trace[-1][1]:
             break

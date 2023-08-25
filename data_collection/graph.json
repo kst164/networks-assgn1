@@ -1,0 +1,446 @@
+{
+    "nodes": [
+        {
+            "id": "9498",
+            "sname": "Bharti Airtel Limited",
+            "country": "IN",
+            "cidr_list": [
+                "116.119.32.0/19",
+                "182.79.201.0/24",
+                "182.79.161.0/24",
+                "182.79.245.0/24",
+                "116.119.64.0/18",
+                "59.144.94.0/24",
+                "182.79.134.0/24",
+                "202.56.234.0/24",
+                "182.71.238.0/24",
+                "182.79.164.0/24",
+                "182.79.239.0/24",
+                "182.66.64.0/20",
+                "182.79.223.0/24"
+            ]
+        },
+        {
+            "id": "6461",
+            "sname": "Zayo Bandwidth",
+            "country": "US",
+            "cidr_list": [
+                "64.124.0.0/15",
+                "94.31.0.0/18"
+            ]
+        },
+        {
+            "id": "1103",
+            "sname": "SURF B.V.",
+            "country": "NL",
+            "cidr_list": [
+                "145.144.0.0/12"
+            ]
+        },
+        {
+            "id": "786",
+            "sname": "Jisc Services Limited",
+            "country": "GB",
+            "cidr_list": [
+                "146.97.0.0/16",
+                "131.111.0.0/16",
+                "193.60.0.0/14",
+                "128.232.0.0/16"
+            ]
+        },
+        {
+            "id": "2200",
+            "sname": "Renater",
+            "country": "FR",
+            "cidr_list": [
+                "193.48.0.0/14",
+                "193.54.0.0/15",
+                "195.220.0.0/16",
+                "195.221.0.0/16"
+            ]
+        },
+        {
+            "id": "55847",
+            "sname": "National Knowledge Network",
+            "country": "IN",
+            "cidr_list": [
+                "203.110.240.0/21"
+            ]
+        },
+        {
+            "id": "6453",
+            "sname": "TATA COMMUNICATIONS (AMERICA) INC",
+            "country": "US",
+            "cidr_list": [
+                "195.219.0.0/16",
+                "64.86.0.0/16",
+                "80.231.0.0/16",
+                "206.82.128.0/20",
+                "216.6.0.0/17"
+            ]
+        },
+        {
+            "id": "559",
+            "sname": "SWITCH",
+            "country": "CH",
+            "cidr_list": [
+                "130.59.0.0/16",
+                "192.33.92.0/22",
+                "129.132.0.0/16"
+            ]
+        },
+        {
+            "id": "11537",
+            "sname": "Internet2",
+            "country": "US",
+            "cidr_list": [
+                "163.253.0.0/22",
+                "64.57.16.0/20"
+            ]
+        },
+        {
+            "id": "13335",
+            "sname": "Cloudflare, Inc.",
+            "country": "US",
+            "cidr_list": [
+                "104.16.0.0/20",
+                "172.68.39.0/24",
+                "172.70.216.0/24",
+                "162.158.226.0/23",
+                "172.69.82.0/24",
+                "172.71.196.0/24",
+                "172.69.74.0/24"
+            ]
+        },
+        {
+            "id": "2914",
+            "sname": "NTT America, Inc.",
+            "country": "US",
+            "cidr_list": [
+                "129.250.0.0/16",
+                "116.51.16.0/20"
+            ]
+        },
+        {
+            "id": "20965",
+            "sname": "GEANT Vereniging",
+            "country": "NL",
+            "cidr_list": [
+                "62.40.96.0/19"
+            ]
+        },
+        {
+            "id": "3356",
+            "sname": "Level 3 Parent, LLC",
+            "country": "US",
+            "cidr_list": [
+                "4.0.0.0/9",
+                "8.244.0.0/15"
+            ]
+        },
+        {
+            "id": "209242",
+            "sname": "Cloudflare London, LLC",
+            "country": "US",
+            "cidr_list": [
+                "141.193.213.0/24"
+            ]
+        },
+        {
+            "id": "54113",
+            "sname": "Fastly, Inc.",
+            "country": "US",
+            "cidr_list": [
+                "151.101.0.0/22",
+                "151.101.128.0/22",
+                "151.101.192.0/22",
+                "151.101.156.0/22",
+                "151.101.64.0/22",
+                "23.185.0.0/24",
+                "199.232.20.0/22",
+                "151.101.152.0/22"
+            ]
+        },
+        {
+            "id": "141340",
+            "sname": "IIT Madras",
+            "country": "IN",
+            "cidr_list": [
+                "103.158.42.0/24"
+            ]
+        },
+        {
+            "id": "28571",
+            "sname": "UNIVERSIDADE DE SAO PAULO",
+            "country": "BR",
+            "cidr_list": [
+                "200.144.248.0/24",
+                "143.107.249.0/24"
+            ]
+        },
+        {
+            "id": "8075",
+            "sname": "Microsoft Corporation",
+            "country": "US",
+            "cidr_list": [
+                "104.40.0.0/13",
+                "20.192.0.0/10"
+            ]
+        },
+        {
+            "id": "4538",
+            "sname": "China Education and Research Network Center",
+            "country": "CN",
+            "cidr_list": [
+                "166.111.4.0/24",
+                "118.229.0.0/21",
+                "202.112.0.0/16",
+                "101.4.0.0/14",
+                "118.229.8.0/21"
+            ]
+        },
+        {
+            "id": "2519",
+            "sname": "ARTERIA Networks Corporation",
+            "country": "JP",
+            "cidr_list": [
+                "222.230.0.0/16",
+                "163.139.0.0/16"
+            ]
+        },
+        {
+            "id": "55824",
+            "sname": "National Knowledge Network",
+            "country": "IN",
+            "cidr_list": [
+                "180.149.48.0/24"
+            ]
+        },
+        {
+            "id": "4694",
+            "sname": "IDC Frontier Inc.",
+            "country": "JP",
+            "cidr_list": [
+                "158.205.121.0/24",
+                "210.152.240.0/21"
+            ]
+        },
+        {
+            "id": "376",
+            "sname": "Reseau d'Informations Scientifiques du Quebec (RISQ Inc.)",
+            "country": "CA",
+            "cidr_list": [
+                "206.167.128.0/17",
+                "192.77.63.0/24"
+            ]
+        },
+        {
+            "id": "59193",
+            "sname": "IIT Hyderabad",
+            "country": "IN",
+            "cidr_list": [
+                "103.232.241.0/24"
+            ]
+        },
+        {
+            "id": "1124",
+            "sname": "Universiteit van Amsterdam",
+            "country": "EU",
+            "cidr_list": [
+                "145.18.0.0/16"
+            ]
+        },
+        {
+            "id": "4755",
+            "sname": "Tata Communications Limited",
+            "country": "IN",
+            "cidr_list": [
+                "14.141.20.0/24",
+                "121.240.0.0/16"
+            ]
+        },
+        {
+            "id": "6509",
+            "sname": "CANARIE Inc",
+            "country": "CA",
+            "cidr_list": [
+                "205.189.32.0/24"
+            ]
+        },
+        {
+            "id": "23911",
+            "sname": "China Next Generation Internet Beijing IX",
+            "country": "CN",
+            "cidr_list": [
+                "210.25.189.0/24",
+                "210.25.187.0/24"
+            ]
+        },
+        {
+            "id": "55836",
+            "sname": "Reliance Jio Infocomm Limited",
+            "country": "IN",
+            "cidr_list": [
+                "49.44.128.0/17",
+                "139.167.44.0/22",
+                "136.232.128.0/19",
+                "115.247.100.0/22",
+                "115.247.68.0/22",
+                "115.242.168.0/23"
+            ]
+        },
+        {
+            "id": "132524",
+            "sname": "Tata Institute of Fundamental Research",
+            "country": "IN",
+            "cidr_list": [
+                "158.144.8.0/23",
+                "158.144.1.0/24"
+            ]
+        },
+        {
+            "id": "2018",
+            "sname": "TENET (The UNINET Project)",
+            "country": "ZA",
+            "cidr_list": [
+                "155.232.0.0/16",
+                "154.114.0.0/17"
+            ]
+        },
+        {
+            "id": "24785",
+            "sname": "Broadband Hosting B.V.",
+            "country": "NL",
+            "cidr_list": [
+                "217.170.0.0/24"
+            ]
+        },
+        {
+            "id": "36982",
+            "sname": "University of Cape Town",
+            "country": "ZA",
+            "cidr_list": [
+                "137.158.0.0/16"
+            ]
+        },
+        {
+            "id": "2153",
+            "sname": "California State University, Office of the Chancellor",
+            "country": "US",
+            "cidr_list": [
+                "137.164.26.0/23",
+                "137.164.25.0/24"
+            ]
+        },
+        {
+            "id": "32",
+            "sname": "Stanford University",
+            "country": "US",
+            "cidr_list": [
+                "171.64.0.0/14"
+            ]
+        },
+        {
+            "id": "6939",
+            "sname": "Hurricane Electric LLC",
+            "country": "US",
+            "cidr_list": [
+                "184.104.0.0/15",
+                "216.218.128.0/17"
+            ]
+        },
+        {
+            "id": "132780",
+            "sname": "Indian Institute of Technology Delhi",
+            "country": "IN",
+            "cidr_list": [
+                "103.27.9.0/24"
+            ]
+        },
+        {
+            "id": "4775",
+            "sname": "Globe Telecom (GMCR,INC)",
+            "country": "PH",
+            "cidr_list": [
+                "206.72.210.0/23",
+                "80.81.192.0/21",
+                "80.249.208.0/21"
+            ]
+        },
+        {
+            "id": "9829",
+            "sname": "Bharat Sanchar Nigam Ltd",
+            "country": "IN",
+            "cidr_list": [
+                "210.212.69.0/24",
+                "218.248.0.0/20",
+                "117.236.224.0/20"
+            ]
+        },
+        {
+            "id": "20562",
+            "sname": "Broadband Hosting B.V.",
+            "country": "NL",
+            "cidr_list": [
+                "82.150.158.0/24"
+            ]
+        },
+        {
+            "id": "1916",
+            "sname": "Rede Nacional de Ensino e Pesquisa",
+            "country": "BR",
+            "cidr_list": [
+                "200.143.192.0/18"
+            ]
+        },
+        {
+            "id": "132423",
+            "sname": "Indian Institute of Technology Bombay",
+            "country": "IN",
+            "cidr_list": [
+                "103.21.124.0/24"
+            ]
+        },
+        {
+            "id": "24560",
+            "sname": "Bharti Airtel Limited",
+            "country": "IN",
+            "cidr_list": [
+                "223.230.16.0/24"
+            ]
+        },
+        {
+            "id": "3549",
+            "sname": "Level 3 Parent, LLC",
+            "country": "US",
+            "cidr_list": [
+                "113.29.0.0/20"
+            ]
+        },
+        {
+            "id": "55479",
+            "sname": "IIT Kanpur",
+            "country": "IN",
+            "cidr_list": [
+                "202.3.77.0/24"
+            ]
+        },
+        {
+            "id": "15318",
+            "sname": "McGill University",
+            "country": "CA",
+            "cidr_list": [
+                "132.216.0.0/16"
+            ]
+        },
+        {
+            "id": "1",
+            "sname": "blore",
+            "country": "IN",
+            "cidr_list": [
+                "pfft"
+            ]
+        }
+    ],
+    "edges": null
+}
